@@ -1,0 +1,10 @@
+
+.plugin-gridster.runExe .front {
+  background: url('images/logo3.png') center 34px;
+  background-size:   135px 87px;
+  background-repeat: no-repeat;
+}
+
+.plugin-gridster.runExe .back {
+ background-size: cover;
+}

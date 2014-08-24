@@ -1,0 +1,5 @@
+xbmc|"C:\\Program Files\\XBMC\\XBMC.exe"|"XBMC"
+wordpad|"C:\\Program Files\\Windows NT\\Accessories\\wordpad.exe"|"wordpad"
+excel|"C:\\Program Files\\Microsoft Office\\Office15\\excel.exe"|"excel"
+Log2console|"C:\\S.A.R.A.H\\Log2Console\\Log2Console.exe"|"logue tou console"
+chrome|"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"|"Crome"

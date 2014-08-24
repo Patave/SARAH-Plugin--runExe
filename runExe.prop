@@ -1,0 +1,8 @@
+{
+  "modules" : { 
+    "runExe"  : {
+      "description": "permet de lancer un programme comme XBMC, et bien d'autres choses.",
+      "version"    : "1.0"
+    }
+  }
+}

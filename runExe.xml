@@ -1,0 +1,46 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleRUNEXE" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+ 
+  <rule id="ruleRUNEXE" scope="public">
+    <example>SARAH lance l'application XBMC</example>
+    <tag>out.action=new Object(); </tag>
+    <item>SARAH</item>
+	
+	<one-of>
+		<!--met à jour la liste des application depuis proglist.txt-->
+		<item>met à jour les applications<tag>out.action.command="update"</tag></item>
+		<item>charge les applications<tag>out.action.command="update"</tag></item>
+		<item>update applications<tag>out.action.command="update"</tag></item>
+		<item>actualise les application<tag>out.action.command="update"</tag></item>
+	  
+		<!--Démarre une Application-->
+		<item>Application<tag>out.action.command="open"</tag></item>
+		<item>Lance l'application<tag>out.action.command="open"</tag></item>
+		<item>Lance<tag>out.action.command="open"</tag></item>
+		<item>daimarre l'application<tag>out.action.command="open"</tag></item>
+		<item>ouvre l'application<tag>out.action.command="open"</tag></item>
+		<item>ouvre<tag>out.action.command="open"</tag></item>
+		
+		<!--Arrête une Application-->
+		<item>arrête l'application<tag>out.action.command="close"</tag></item>
+		<item>stop l'application<tag>out.action.command="close"</tag></item>
+		<item>ferme l'application<tag>out.action.command="close"</tag></item>
+		<item>ferme<tag>out.action.command="close"</tag></item>
+     </one-of> 
+
+	<!--Liste des applications générée depuis proglist.txt-->
+	<item repeat="0-1">
+	<!--{-->
+      <one-of>
+        <item>xbmc<tag>out.action.path='"C:\\Program Files\\XBMC\\XBMC.exe"',out.action.appName="XBMC"</tag></item>
+        <item>wordpad<tag>out.action.path='"C:\\Program Files\\Windows NT\\Accessories\\wordpad.exe"',out.action.appName="wordpad"</tag></item>
+        <item>excel<tag>out.action.path='"C:\\Program Files\\Microsoft Office\\Office15\\excel.exe"',out.action.appName="excel"</tag></item>
+        <item>Log2console<tag>out.action.path='"C:\\S.A.R.A.H\\Log2Console\\Log2Console.exe"',out.action.appName="logue tou console"</tag></item>
+        <item>chrome<tag>out.action.path='"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"',out.action.appName="Crome"</tag></item>
+      </one-of>
+    <!--}-->
+	</item>
+
+    <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/runExe";</tag>
+  </rule>
+   
+</grammar>
